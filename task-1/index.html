@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КОНТРОЛЬНА-1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="task-1" id="task-1">
+          <h2>Test</h2>
+          <div class="task-1__form">
+            <label for="key-value-input"> Name/Value Pair </label>
+            <input type="text" id="key_value_input" pattern="^\w+=\w+$" />
+            <button id="add">Add</button>
+            <label for="key_value_list">Name/Value Pair List</label>
+            <ul id="key_value_list"></ul>
+            <div class="task-1__actions">
+              <div class="task-1__sort-actions">
+                <button id="sort_by_key">Sort by Name</button>
+                <button id="sort_by_value">Sort by Value</button>
+              </div>
+              <button id="delete">Delete</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

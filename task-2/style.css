@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Aril, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: minmax(250px, auto) minmax(250px, auto);
+  gap: 10px;
+}
+
+.container {
+  padding: 20px;
+}
+
+#users {
+  margin: 0 auto;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+}
