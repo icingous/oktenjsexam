@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   if (postId) {
     const postRequest = fetch(
-      `https://jsonplaceholder.typicode.com/posts/${postId}`
+      `https://jsonplaceholder.typicode.com/posts/${postId}`,
     ).then((res) => res.json());
     const postCommentsRequest = fetch(
-      `https://jsonplaceholder.typicode.com/posts/${postId}/comments`
+      `https://jsonplaceholder.typicode.com/posts/${postId}/comments`,
     ).then((res) => res.json());
 
     Promise.all([postRequest, postCommentsRequest])
@@ -48,7 +48,6 @@ function buildPostCommentsList(comments) {
     li.className = 'comment';
     li.innerHTML = `<p>${body}</p>
       <addr>${name}, ${email}</addr>`;
-    ul.appendChild(li);
 
     return li;
   });

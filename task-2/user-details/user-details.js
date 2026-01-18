@@ -29,7 +29,6 @@ function buildUserPropsInfo(userProps) {
   const dl = document.getElementById('user_props');
   const props = Object.entries(userProps);
   const dlItems = Array(props.length * 2);
-  let i = 0;
 
   for (let i = 0, length = props.length; i < length; ++i) {
     const [key, value] = props[i];
